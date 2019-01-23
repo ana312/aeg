@@ -1,1 +1,3 @@
 AEG-CCA Project 2019
+
+Requires pandas, numpy, pandas_datareader with fix_yahoo_finance
