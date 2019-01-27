@@ -1,3 +1,7 @@
+#Returns 'Vanilla Predictors' 
+#Takes financial data in Pandas format
+#Covariance matrix and expected return.
+
 from pandas_datareader import data as pdr 
 from sp500 import SP500
 from ticker import SP_data
@@ -13,5 +17,5 @@ def exp_return(data):
 
 def covmatrix(data):
 	operable_data=data.Open.values
-	cov_matrix=np.cov(operabe_data.T)
+	cov_matrix=np.cov(operabe_data.T) #Transpose ensures correct output 
 	return cov_matrix
